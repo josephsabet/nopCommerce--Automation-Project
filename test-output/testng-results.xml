@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-02T12:45:56 EEST" name="Default suite" finished-at="2025-09-02T12:46:29 EEST" duration-ms="33115">
+    <groups>
+    </groups>
+    <test started-at="2025-09-02T12:45:56 EEST" name="Default test" finished-at="2025-09-02T12:46:29 EEST" duration-ms="33115">
+      <class name="tests.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:45:56 EEST" name="setUp" finished-at="2025-09-02T12:45:59 EEST" duration-ms="3368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAutocompleteSuggestions()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:45:59 EEST" name="testAutocompleteSuggestions" finished-at="2025-09-02T12:46:03 EEST" duration-ms="3325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutocompleteSuggestions -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:03 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:03 EEST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:03 EEST" name="tearDown" finished-at="2025-09-02T12:46:03 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:03 EEST" name="setUp" finished-at="2025-09-02T12:46:05 EEST" duration-ms="2610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPlaceholderText()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:05 EEST" name="testPlaceholderText" finished-at="2025-09-02T12:46:05 EEST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlaceholderText -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:05 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:06 EEST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:06 EEST" name="tearDown" finished-at="2025-09-02T12:46:06 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:06 EEST" name="setUp" finished-at="2025-09-02T12:46:09 EEST" duration-ms="3014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearch(java.lang.String,boolean)[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:09 EEST" name="testSearch" data-provider="searchTerms" finished-at="2025-09-02T12:46:10 EEST" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[computer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:10 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:10 EEST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:10 EEST" name="tearDown" finished-at="2025-09-02T12:46:10 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:10 EEST" name="setUp" finished-at="2025-09-02T12:46:13 EEST" duration-ms="2620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearch(java.lang.String,boolean)[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:13 EEST" name="testSearch" data-provider="searchTerms" finished-at="2025-09-02T12:46:14 EEST" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonexistentproduct]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:14 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:14 EEST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:14 EEST" name="tearDown" finished-at="2025-09-02T12:46:14 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:14 EEST" name="setUp" finished-at="2025-09-02T12:46:17 EEST" duration-ms="3062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearch(java.lang.String,boolean)[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:17 EEST" name="testSearch" data-provider="searchTerms" finished-at="2025-09-02T12:46:18 EEST" duration-ms="1341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:18 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:18 EEST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:18 EEST" name="tearDown" finished-at="2025-09-02T12:46:18 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:18 EEST" name="setUp" finished-at="2025-09-02T12:46:21 EEST" duration-ms="2737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearch(java.lang.String,boolean)[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:21 EEST" name="testSearch" data-provider="searchTerms" finished-at="2025-09-02T12:46:22 EEST" duration-ms="415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:22 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:22 EEST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:22 EEST" name="setUp" finished-at="2025-09-02T12:46:24 EEST" duration-ms="2475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:22 EEST" name="tearDown" finished-at="2025-09-02T12:46:22 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testSearch(java.lang.String,boolean)[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:24 EEST" name="testSearch" data-provider="searchTerms" finished-at="2025-09-02T12:46:25 EEST" duration-ms="992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[comp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:25 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:25 EEST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:25 EEST" name="tearDown" finished-at="2025-09-02T12:46:25 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:25 EEST" name="setUp" finished-at="2025-09-02T12:46:29 EEST" duration-ms="3335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchBoxVisible()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:29 EEST" name="testSearchBoxVisible" finished-at="2025-09-02T12:46:29 EEST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBoxVisible -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:29 EEST" name="tearDownTest" finished-at="2025-09-02T12:46:29 EEST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SearchTest@31190526]" started-at="2025-09-02T12:46:29 EEST" name="tearDown" finished-at="2025-09-02T12:46:29 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.SearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
