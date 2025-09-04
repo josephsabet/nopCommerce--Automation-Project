@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [nopCommerce Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="All Tests(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workflows.checkoutWithoutSearch">
+      <class name="tests.ShoppingCartPageTest">
         <methods>
+          <include name="setUpPages"/>
+          <include name="addToShCart_HomePage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testRegisterAddToCartAndCheckout"/>
-          <include name="setUpDropdown"/>
         </methods>
-      </class> <!-- workflows.checkoutWithoutSearch -->
+      </class> <!-- tests.ShoppingCartPageTest -->
     </classes>
-  </test> <!-- All Tests(failed) -->
-</suite> <!-- Failed suite [nopCommerce Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -13,12 +13,13 @@ public class SearchPage {
 
     // Locators
     private By searchInput = By.id("small-searchterms");
+    private By searchInputWithEuro = By.xpath("//input[@id=\"small-searchterms\"]");
     private By searchButton = By.cssSelector("button.search-box-button");
     private By resultItems = By.cssSelector(".product-item");
     private By noResultsMessage = By.cssSelector(".no-result");
     private By autoCompleteSuggestions = By.cssSelector("ul.ui-autocomplete li");
     private By warningMessage = By.cssSelector(".warning"); // adjust selector if needed
-
+    private By noresult = By.xpath("//div[@class=\"no-result\"]");
     public SearchPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -37,6 +38,10 @@ public class SearchPage {
           .keyUp(Keys.CONTROL)
           .perform();
     }
+    public void enterSearchTextWithNoItem(String text) {
+        WebElement input = driver.findElement(searchInputWithEuro); 
+        input.sendKeys(text);
+    }
 
     public boolean isWarningMessageDisplayed() {
         return !driver.findElements(warningMessage).isEmpty() &&
@@ -50,6 +55,16 @@ public class SearchPage {
     
     public void clickSearch() {
         driver.findElement(searchButton).click();
+    }
+    public boolean getTextWithNoproduct() {
+        String text = driver.findElement(noresult).getText();
+        String expectedText = "No products were found that matched your criteria.";
+        
+        if (text.equals(expectedText)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public List<WebElement> getResults() {

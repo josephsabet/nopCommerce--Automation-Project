@@ -2,12 +2,12 @@ package workflows;
 
 import java.util.Random;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.baseTest;
-import pages.DropdownPage;
 import pages.HomePage;
 import pages.RegisterPage;
 import pages.SearchPage;
@@ -22,14 +22,13 @@ public class CheckoutWithSearch extends baseTest {
 	private SearchPage searchpage;
 	private ShoppingCartPage shoppingcart;
 
-
 	@BeforeMethod
 	public void setUpDropdown() {
 //		super.setUp();
 		register = new RegisterPage(driver);
 		homepage = new HomePage(driver);
 		searchpage = new SearchPage(driver);
-		shoppingcart=new ShoppingCartPage(driver);
+		shoppingcart = new ShoppingCartPage(driver);
 	}
 
 	@DataProvider(name = "registerData")
@@ -53,9 +52,10 @@ public class CheckoutWithSearch extends baseTest {
 		Thread.sleep(3000);
 		homepage.clickShoppingCart();
 		Thread.sleep(3000);
-		shoppingcart.checkOut();
+		boolean result = shoppingcart.checkOut();
 		Thread.sleep(3000);
+		Assert.assertTrue(result, "It should check out successfully.");
 
-}
+	}
 
 }

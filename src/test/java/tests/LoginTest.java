@@ -61,8 +61,7 @@ public class LoginTest extends baseTest {
 	@DataProvider(name = "inValidLogin") 
 
 	public Object[][] dataProvider1() { 
-
-	 
+ 
 
 	return new Object[][] {  
 
@@ -157,7 +156,7 @@ public class LoginTest extends baseTest {
 	public Object[][] dataProvider3() { 
 	return new Object[][] { 
 
-	{ "faisal3005@google.de", "tZ7~LoT'9a&V", "check if user can login with valid credentials" } }; 
+	{ "faisal304800@google.de", "tZ7~LoT'9a&V", "check if user can login with valid credentials" } }; 
 
 	} 
 

@@ -3,14 +3,14 @@
 <suite name="Failed suite [nopCommerce Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="All Tests(failed)">
     <classes>
-      <class name="workflows.checkoutWithoutSearch">
+      <class name="workflows.checkoutAsGuest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testRegisterAddToCartAndCheckout"/>
           <include name="setUpDropdown"/>
+          <include name="testAddToCartAndCheckoutAsGuest"/>
         </methods>
-      </class> <!-- workflows.checkoutWithoutSearch -->
+      </class> <!-- workflows.checkoutAsGuest -->
     </classes>
   </test> <!-- All Tests(failed) -->
 </suite> <!-- Failed suite [nopCommerce Test Suite] -->

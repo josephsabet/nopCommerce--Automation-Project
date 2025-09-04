@@ -111,7 +111,7 @@ public class RegisterTest extends baseTest {
 
 	public Object[][] dataProvider9() {
 
-		return new Object[][] { { "Cletis", "Guntrip", "aya30038@hotmail.com", "iB6}9{D\\dbE", "iB6}9{D\\dbE",
+		return new Object[][] { { "Cletis", "Guntrip", "aya300700@hotmail.com", "iB6}9{D\\dbE", "iB6}9{D\\dbE",
 
 				"check if user can register a new account by using a used Email address(registering for the email for the first time)" } };
 
@@ -142,7 +142,7 @@ public class RegisterTest extends baseTest {
 
 	public Object[][] dataProvider10() {
 
-		return new Object[][] { { "Cletis", "Guntrip", "aya30038@hotmail.com", "iB6}9{D\\dbE", "iB6}9{D\\dbE",
+		return new Object[][] { { "Cletis", "Guntrip", "aya300700@hotmail.com", "iB6}9{D\\dbE", "iB6}9{D\\dbE",
 
 				"check if user can register a new account by using a used Email address(registering for the email for the second time)" } };
 
@@ -244,7 +244,7 @@ public class RegisterTest extends baseTest {
 //new email here
 	@DataProvider(name = "validRegister")
 	public Object[][] dataProvider4() {
-		return new Object[][] { { "Ali", "Willmott", "faisal3005@google.de", "tZ7~LoT'9a&V", "tZ7~LoT'9a&V",
+		return new Object[][] { { "Ali", "Willmott", "faisal304800@google.de", "tZ7~LoT'9a&V", "tZ7~LoT'9a&V",
 				"check if user can register a new account using valid credentials" } };
 	}
 }

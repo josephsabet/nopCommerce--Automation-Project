@@ -5,7 +5,8 @@
         <classes>
 			<class name="workflows.CheckoutWithSearch" /> 
 			<class name="workflows.checkoutWithoutSearch" /> 
-
+			<class name="workflows.checkoutAsGuest" />
+			<class name="workflows.ItemNotFound" />
         </classes>
     </test>
 </suite>

@@ -19,7 +19,7 @@ public class ShoppingCartPage {
 	private By lenovoItem_shCart = By.xpath("(//div[@class='item-box'])[3]//button[@type='button'][1]");
 	private By itemHTC_wishlist = By.xpath("(//div[@class='item-box'])[6]//button[@type='button'][3]");
 	private By wishListPageBtn = By.xpath("(//a[@href='/wishlist'])[1]");
-	private By checkBox = By.name("addtocart");
+	private By checkBox = By.xpath("//input[@type='checkbox' and @name='addtocart']");
 	private By addToCartBtn = By.xpath("//button[@name='addtocartbutton']");
 	private By htcPage = By.xpath("(//a[@href='/htc-smartphone'])[4]");
 	private By pathOfHTC = By.className("current-item");
@@ -53,7 +53,7 @@ public class ShoppingCartPage {
 		driver.findElement(regPage).click();
 		driver.findElement(firstNameField).sendKeys("user");
 		driver.findElement(lastNameField).sendKeys("name");
-		driver.findElement(emailField).sendKeys("userfaisal2024@gmail.com");
+		driver.findElement(emailField).sendKeys("userfaisal207010@gmail.com");
 		driver.findElement(passwordField).sendKeys("username1234");
 		driver.findElement(passwordFieldConfirmation).sendKeys("username1234");
 		driver.findElement(regBtn).click();
@@ -95,24 +95,24 @@ public class ShoppingCartPage {
 		return true;
 	}
 
-	public boolean clickOnItem_WishlistPage() throws InterruptedException {
-		driver.findElement(itemHTC_wishlist).click();
-		Thread.sleep(3000);
-		driver.findElement(wishListPageBtn).click();
-		Thread.sleep(3000);
-		driver.findElement(checkBox).click();
-		Thread.sleep(3000);
-		driver.findElement(addToCartBtn).click();
-		Thread.sleep(3000);
-		driver.findElement(shCartPage).click();
-		boolean displayed = driver.findElement(itemOnShCartPage).isDisplayed();
-		if (!displayed) {
-			System.out.println("Item Not Added to the wishlist");
-			return false;
-		}
-		System.out.println("Item added successfully to the shopping cart");
-		return true;
-	}
+	 public boolean clickOnItem_WishlistPage() throws InterruptedException {
+		  driver.findElement(itemHTC_wishlist).click();
+		  Thread.sleep(3000);
+		  driver.findElement(wishListPageBtn).click();
+		  Thread.sleep(5000);
+		  driver.findElement(checkBox).click();
+		  Thread.sleep(3000);
+		  driver.findElement(addToCartBtn).click();
+		  Thread.sleep(3000);
+		  driver.findElement(shCartPage).click();
+		  boolean displayed = driver.findElement(itemOnShCartPage).isDisplayed();
+		  if (!displayed) {
+		   System.out.println("Item Not Added to the wishlist");
+		   return false;
+		  }
+		  System.out.println("Item added successfully to the shopping cart");
+		  return true;
+		 }
 
 	public boolean itemPage() throws InterruptedException {
 //  driver.findElement(itemHTC_shCart).click();
@@ -204,5 +204,24 @@ public class ShoppingCartPage {
 		System.out.println("Checkout Page is Desplayed");
 		return true;
 	}
+	
+	public boolean asGuest() throws InterruptedException {
+		  driver.findElement(agree).click();
+		  Thread.sleep(3000);
+		  driver.findElement(checkoutBtn).click();
+		  Thread.sleep(1000);
+		  driver.findElement(guest).click();
+
+		  boolean displayed = driver.findElement(cheackoutPage).isDisplayed();
+		  if (!displayed) {
+		   System.out.println("Checkout Page is not Desplayed");
+		   return false;
+		  }
+		  Thread.sleep(3000);
+		  System.out.println("Checkout Page is Desplayed");
+		  return true;
+		 }
+		 
+	
 
 }
