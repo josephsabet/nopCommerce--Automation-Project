@@ -1,8 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
 import java.util.List;
 
 public class SearchPage {
@@ -14,6 +17,7 @@ public class SearchPage {
     private By resultItems = By.cssSelector(".product-item");
     private By noResultsMessage = By.cssSelector(".no-result");
     private By autoCompleteSuggestions = By.cssSelector("ul.ui-autocomplete li");
+    private By warningMessage = By.cssSelector(".warning"); // adjust selector if needed
 
     public SearchPage(WebDriver driver) {
         this.driver = driver;
@@ -24,8 +28,26 @@ public class SearchPage {
         WebElement input = driver.findElement(searchInput);
         input.clear();
         input.sendKeys(text);
+        
+        Actions actions = new Actions(driver);
+        actions
+          .click(input)
+          .keyDown(Keys.CONTROL)
+          .sendKeys(Keys.SPACE)
+          .keyUp(Keys.CONTROL)
+          .perform();
     }
 
+    public boolean isWarningMessageDisplayed() {
+        return !driver.findElements(warningMessage).isEmpty() &&
+               driver.findElement(warningMessage).isDisplayed();
+    }
+
+    public By getWarningMessageLocator() {
+        return warningMessage;
+    }
+
+    
     public void clickSearch() {
         driver.findElement(searchButton).click();
     }

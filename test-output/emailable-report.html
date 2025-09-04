@@ -8,18 +8,53 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,115</td><td></td><td></td></tr>
+<tr><th colspan="8">nopCommerce Test Suite</th></tr>
+<tr><td><a href="#t0">All Tests</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">66,724</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">tests.SearchTest</td><td><a href="#m0">testAutocompleteSuggestions</a></td><td rowspan="1">1756806359706</td><td rowspan="1">3325</td></tr><tr class="passedeven"><td><a href="#m1">testPlaceholderText</a></td><td rowspan="1">1756806365917</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m2">testSearch</a></td><td rowspan="5">1756806369146</td><td rowspan="5">1167</td></tr><tr class="passedeven"><td><a href="#m3">testSearch</a></td></tr><tr class="passedeven"><td><a href="#m4">testSearch</a></td></tr><tr class="passedeven"><td><a href="#m5">testSearch</a></td></tr><tr class="passedeven"><td><a href="#m6">testSearch</a></td></tr><tr class="passedeven"><td><a href="#m7">testSearchBoxVisible</a></td><td rowspan="1">1756806389226</td><td rowspan="1">39</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">nopCommerce Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">All Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">workflows.checkoutWithoutSearch</td><td><a href="#m0">setUp</a></td><td rowspan="1">1756973232043</td><td rowspan="1">2566</td></tr><tr><th colspan="4">All Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">workflows.checkoutWithoutSearch</td><td><a href="#m1">setUpDropdown</a></td><td rowspan="1">1756973234613</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">tearDown</a></td><td rowspan="1">1756973234617</td><td rowspan="1">0</td></tr><tr><th colspan="4">All Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">workflows.checkoutWithoutSearch</td><td><a href="#m3">testRegisterAddToCartAndCheckout</a></td><td rowspan="1">1756973234614</td><td rowspan="1">1</td></tr><tr><th colspan="4">All Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">workflows.CheckoutWithSearch</td><td><a href="#m4">testRegisterSearchAddToCartAndCheckout</a></td><td rowspan="1">1756973170401</td><td rowspan="1">25303</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.SearchTest#testAutocompleteSuggestions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.SearchTest#testPlaceholderText</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.SearchTest#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>computer</td><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.SearchTest#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>!@#$%</td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.SearchTest#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td></td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.SearchTest#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>comp</td><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.SearchTest#testSearch</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>nonexistentproduct</td><td>false</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.SearchTest#testSearchBoxVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>All Tests</h2><h3 id="m0">workflows.checkoutWithoutSearch#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=139.0.7258.155)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38b8dc76238e7d9dcf8a81aed7a62f66, get {url=https://demo.nopcommerce.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sbty0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60598/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38b8dc76238e7d9dcf8a81aed7a62f66
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at base.baseTest.setUp(baseTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">workflows.checkoutWithoutSearch#setUpDropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">workflows.checkoutWithoutSearch#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">workflows.checkoutWithoutSearch#testRegisterAddToCartAndCheckout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>feras</td><td>alfara</td><td>user1756973234920@gmail.com</td><td>21335@g585</td><td>21335@g585</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=139.0.7258.155)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38b8dc76238e7d9dcf8a81aed7a62f66, get {url=https://demo.nopcommerce.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sbty0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60598}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60598/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38b8dc76238e7d9dcf8a81aed7a62f66
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at base.baseTest.setUp(baseTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">workflows.CheckoutWithSearch#testRegisterSearchAddToCartAndCheckout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>feras</td><td>alfara</td><td>user1756973171013@gmail.com</td><td>21335@g585</td><td>21335@g585</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

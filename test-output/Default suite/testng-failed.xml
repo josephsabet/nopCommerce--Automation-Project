@@ -3,14 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SearchTest">
+      <class name="tests.LoginTest">
         <methods>
+          <include name="validLogin"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testAutocompleteSuggestions"/>
-          <include name="tearDownTest"/>
+          <include name="inValidLogin" invocation-numbers="0"/>
+          <include name="logout"/>
+          <include name="openLoginPage"/>
+          <include name="sendUnregisterdEmail"/>
+          <include name="clickRegister"/>
+          <include name="testForgotPasswordButton"/>
+          <include name="clickEyeIcon"/>
+          <include name="accessToMyAccount"/>
+          <include name="testRememberMeButton"/>
+          <include name="pageSetup"/>
         </methods>
-      </class> <!-- tests.SearchTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
