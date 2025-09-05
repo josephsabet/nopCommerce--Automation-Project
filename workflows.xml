@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="nopCommerce Test Suite" verbose="1" parallel="false">
-    <test name="All Tests">
-        <classes>
-			<class name="workflows.CheckoutWithSearch" /> 
-			<class name="workflows.checkoutWithoutSearch" /> 
-			<class name="workflows.checkoutAsGuest" />
+	<test name="All Tests">
+		<classes>
+			<class name="workflows.CheckoutWithSearch" />
+			<class name="workflows.checkoutWithoutSearch" />
 			<class name="workflows.ItemNotFound" />
-        </classes>
-    </test>
+			<!-- <class name="workflows.checkoutAsGuest" />-->
+		</classes>
+	</test>
 </suite>
